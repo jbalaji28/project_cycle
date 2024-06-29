@@ -1,0 +1,67 @@
+import React, { useState, useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import * as L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-3d/dist/leaflet-3d.css';
+import 'leaflet-3d';
+
+const MapWith3D = () => {
+  const [routeCoordinates, setRouteCoordinates] = useState([]);
+
+  useEffect(() => {
+    // Fetch route coordinates (replace with your own function)
+    fetchRouteCoordinates().then(coordinates => {
+      setRouteCoordinates(coordinates);
+    });
+  }, []);
+
+  // Function to fetch route coordinates
+  const fetchRouteCoordinates = async () => {
+    // Example route coordinates
+    return [
+      [51.5, -0.1], // Start coordinates
+      [51.51, -0.09], // Intermediate coordinates
+      [51.52, -0.1], // End coordinates
+    ];
+  };
+
+  useEffect(() => {
+    // Create Leaflet map
+    const map = L.map('map', {
+      center: [51.505, -0.09],
+      zoom: 13
+    });
+
+    // Add 3D Tiles layer
+    const tiles = L.tileLayer.threeJS('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      tileSize: 512,
+      minZoom: 1,
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Add route polyline
+    if (routeCoordinates.length > 0) {
+      const polyline = L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
+    }
+
+    // Add markers
+    L.marker([51.5, -0.1]).addTo(map)
+      .bindPopup('Start')
+      .openPopup();
+    L.marker([51.51, -0.09]).addTo(map)
+      .bindPopup('Intermediate');
+    L.marker([51.52, -0.1]).addTo(map)
+      .bindPopup('End');
+
+    // Cleanup function
+    return () => {
+      map.remove();
+    };
+  }, [routeCoordinates]);
+
+  return (
+    <div id="map" style={{ height: '400px' }}></div>
+  );
+};
+
+export default MapWith3D;

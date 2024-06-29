@@ -1,0 +1,25 @@
+.tour-details-container {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .tour-details-header h4 {
+    margin-bottom: 20px;
+    color: #3f51b5;
+  }
+  
+  .tour-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tour-details-card {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .tour-details-button {
+    margin-top: 20px;
+  }
+  

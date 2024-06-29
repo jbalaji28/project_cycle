@@ -1,0 +1,98 @@
+.rent-page {
+  background-image: url('https://i.pinimg.com/736x/d7/53/77/d75377c2c96600d7bd03bdba972e8dcc.jpg'); /* Set your background image URL here */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.rent-title {
+  margin-top: 50px; /* Add top margin for title */
+  font-size: 2.5rem; /* Increase font size for title */
+  text-align: center; /* Center align title */
+  color: #333; /* Set a dark color for better visibility */
+}
+
+.rent-description {
+  font-size: 1.2rem; /* Set font size for description */
+  text-align: center; /* Center align description */
+  margin-bottom: 50px; /* Add bottom margin for description */
+  color: #666; /* Set a slightly lighter color for description */
+}
+
+.rent-warning {
+  background-color: #ffe6e6; /* Set background color for warning */
+  border: 1px solid #ff0000; /* Add border for warning */
+  padding: 15px; /* Add padding for warning */
+  margin-bottom: 20px; /* Add bottom margin for warning */
+  border-radius: 4px; /* Add rounded corners */
+}
+
+.rent-warning p {
+  margin: 0; /* Remove default margin for paragraphs inside warning */
+}
+
+.payment-methods {
+  margin-top: 50px; /* Add top margin for payment methods */
+}
+
+.payment-method {
+  padding: 20px; /* Add padding around payment methods */
+}
+
+.payment-button {
+  width: 100%; /* Set button width to fill column */
+  margin-bottom: 15px; /* Add bottom margin for buttons */
+}
+
+.wallet-note {
+  font-size: 0.9rem; /* Set font size for wallet note */
+  color: #888; /* Set text color */
+  margin-top: 5px; /* Add top margin for wallet note */
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-actions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.payment-methods,
+.upi-input {
+  margin-right: 20px;
+}
+
+.qr-code-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.blockchain-visualization-container {
+  margin-top: 30px;
+}
+
+.proceed-payment-container {
+  margin-top: 20px;
+}
+
+.map-container {
+  width: 100%;
+  height: 500px;
+}
+
+.instructions-container {
+  max-height: 500px;
+  overflow-y: auto;
+  width: 300px;
+}
+.hide-instructions .leaflet-routing-container {
+  display: none;
+}

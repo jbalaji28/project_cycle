@@ -1,0 +1,155 @@
+/* Home.css */
+
+.home-container {
+  background-image: url('https://getwallpapers.com/wallpaper/full/4/0/6/1442904-download-cycling-desktop-wallpaper-1920x1440.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 100%;
+}
+
+.home-main {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.feature {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.feature h2 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust width as needed */
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.popup img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.popup-content {
+  padding: 10px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.popup-close {
+  float: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.popup-close:hover {
+  color: #555;
+}
+
+.popup-join {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.popup-join:hover {
+  background-color: #0056b3;
+}
+
+.popup-join-link {
+  text-decoration: none;
+}
+
+/* Footer styles */
+.home-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.home-footer button {
+  background-color: #003366;
+  color: white;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .home-footer button {
+    width: 80%;
+  }
+}

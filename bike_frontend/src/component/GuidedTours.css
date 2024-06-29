@@ -1,0 +1,34 @@
+.guided-tours-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.tour-card {
+  max-width: 345px;
+  margin: auto;
+}
+
+.arrow-button {
+  color: #3f51b5;
+}
+
+.view-details-button {
+  margin-top: 10px;
+}
+
+.how-to-use {
+  margin-top: 30px;
+}
+
+.guided-tours-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3f51b5;
+}
+
+.guided-tours-header p {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}

@@ -1,0 +1,43 @@
+export const toursData = [
+    {
+      id: 1,
+      route: 'Leh Ladakh',
+      description: 'Experience the breathtaking beauty of Leh Ladakh on a 7-day guided tour.',
+      image: 'https://www.trekkinginindia.com/images/cycling-tours-.jpg',
+      duration: '7 days',
+      price: '$1000',
+      startDate: '2024-07-01',
+      endDate: '2024-07-07',
+    },
+    {
+      id: 2,
+      route: 'Delhi',
+      description: 'Explore the historic city of Delhi over a 9-day tour.',
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c4/17/85/caption.jpg?w=1200&h=-1&s=1',
+      duration: '9 days',
+      price: '$1200',
+      startDate: '2024-08-01',
+      endDate: '2024-08-09',
+    },
+    {
+      id: 3,
+      route: 'Simla',
+      description: 'Discover the serene beauty of Simla in a 5-day adventure.',
+      image: 'https://www.bpmcdn.com/f/files/fernie/import/2020-11/23295732_web1_201119-FFP-FatBiking-fg_2.jpg',
+      duration: '5 days',
+      price: '$800',
+      startDate: '2024-09-01',
+      endDate: '2024-09-05',
+    },
+    {
+      id: 4,
+      route: 'Kerala',
+      description: 'Enjoy the lush landscapes of Kerala on a 7-day guided tour.',
+      image: 'https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/01/a5/fb.jpg',
+      duration: '7 days',
+      price: '$1100',
+      startDate: '2024-10-01',
+      endDate: '2024-10-07',
+    },
+  ];
+  

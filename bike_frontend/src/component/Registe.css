@@ -1,0 +1,27 @@
+.register-container {
+    background: #f0f4f8;
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+  }
+  
+  .register-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+  }
+  
+  .register-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .register-form {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
